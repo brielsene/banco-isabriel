@@ -18,7 +18,7 @@ public class Teste {
 		
 		banco.getListaDeBanco().sort((banco1, banco2)->banco1.getUnidade().compareTo(banco2.getUnidade()));
 		
-		banco.getListaDeBanco().sort(( ba1, ba2) -> ba2.getUnidade().compareTo(ba1.getUnidade()));
+		banco.getListaDeBanco().sort(( ba1, ba2) -> ba1.getUnidade().compareTo(ba2.getUnidade()));
 				
 				
 		
@@ -27,6 +27,7 @@ public class Teste {
 //		.collect(Collectors.toMap(b -> b.getNumeroAgencia(), b -> b.getUnidade())).forEach((numero, unidade)->System.out.println("Numero: "+numero+", Unidade: "+unidade));;
 //		
 		banco.getListaDeBanco().forEach(System.out::println);
+		System.out.println(banco.getListaDeBanco());
 		
 //		System.out.println(banco.getListaDeBanco());
 		
