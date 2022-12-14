@@ -38,10 +38,12 @@ public class TesteFuncionario {
 				rauena.ajustaSalario(new BigDecimal("3500.00"));
 				rauena.setDataContratacao(LocalDate.of(2020, 12, 20));
 				
+				
 		
 		//Lista de Funcionario
 		
 		listaFuncionario.add(gabriel);
+		
 		listaFuncionario.add(isadora);
 		listaFuncionario.add(rauena);
 		
