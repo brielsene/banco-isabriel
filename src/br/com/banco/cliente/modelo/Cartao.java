@@ -4,8 +4,9 @@ public class Cartao {
 	private Conta conta;
 	private String tipo;
 
-	public Cartao(Conta conta) {
+	public Cartao(Conta conta, Cartoes tipo) {
 		this.conta = conta;
+		this.tipo = tipo.name();
 
 	}
 
@@ -19,6 +20,12 @@ public class Cartao {
 	
 	public String getTipo() {
 		return tipo;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "[Cartão de "+this.tipo+", Conta: "+this.conta+"]";
 	}
 
 }

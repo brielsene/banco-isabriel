@@ -12,6 +12,7 @@ public class Teste {
 		Banco b1 = new Banco("Engenho Novo", "Rua Otaviano Piza", 3214);
 		Banco b2 = new Banco("Osasco", "Rua Helena Maria", 3254);
 		
+		
 		BancoIsabriel banco = new BancoIsabriel();
 		banco.adicionaBanco(b1);
 		banco.adicionaBanco(b2);
