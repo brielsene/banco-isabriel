@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 
 public class ContaCorrente extends Conta {
 
-	public ContaCorrente(int numeroConta, int agencia, BigDecimal saldo) {
-		super(numeroConta, agencia, saldo);
+	public ContaCorrente(int numeroConta, int agencia, BigDecimal saldo, Cliente cliente) {
+		super(numeroConta, agencia, saldo, cliente);
 		// TODO Auto-generated constructor stub
 	}
 	

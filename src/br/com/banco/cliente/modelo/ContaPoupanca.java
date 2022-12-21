@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 
 public class ContaPoupanca extends Conta {
 
-	public ContaPoupanca(int numeroConta, int agencia, BigDecimal saldo) {
-		super(numeroConta, agencia, saldo);
+	public ContaPoupanca(int numeroConta, int agencia, BigDecimal saldo, Cliente cliente) {
+		super(numeroConta, agencia, saldo, cliente);
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -15,7 +15,7 @@ public class ContaPoupanca extends Conta {
 	
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Poupanca"+", Agência: "+super.getAgencia()+", Numero da Conta: "+this.getNumeroConta()+"]";
+		return "Poupanca"+", Agência: "+super.getAgencia()+", Numero da Conta: "+this.getNumeroConta()+", Nome Completo: "+this.getCliente().getNome()+"]";
 	}
 
 }

@@ -6,14 +6,16 @@ public abstract class Conta {
 	private int numeroConta;
 	private int agencia;
 	private BigDecimal saldo;
+	private Cliente cliente;
 	
 	
 	
 	
-	public Conta(int numeroConta, int agencia, BigDecimal saldo) {
+	public Conta(int numeroConta, int agencia, BigDecimal saldo, Cliente cliente) {
 		this.numeroConta = numeroConta;
 		this.agencia = agencia;
 		this.saldo = saldo;
+		this.cliente = cliente;
 		
 	}
 	
@@ -30,6 +32,10 @@ public abstract class Conta {
 	
 	public BigDecimal getSaldo() {
 		return saldo;
+	}
+	
+	public Cliente getCliente() {
+		return cliente;
 	}
 	
 
